@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:myapp/models/task_model.dart';
+// it imports flutter and task model in the package//
 
 Widget buildTaskList(
   List<Task> tasks,
@@ -16,6 +17,7 @@ Widget buildTaskList(
       final task = tasks[index];
       final isEven = index % 2 == 0;
       
+// it helps to make a scrollable list of tasks so it can easily scroll//
 
       return Padding(
         padding: const EdgeInsets.all(8.0),
@@ -48,3 +50,6 @@ Widget buildTaskList(
     },
   );
 }
+
+
+//it helps to build task list.also it shows the color icon,iconbutton and textstyle//

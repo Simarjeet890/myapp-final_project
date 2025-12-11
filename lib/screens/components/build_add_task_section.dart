@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/providers/task_provider.dart';
 import 'package:myapp/services/task_service.dart';
 
+// it helps to import flutter, providers and services//
+
 Widget buildAddTaskSection(TextEditingController nameController, VoidCallback addTask) {
   return Container(
     decoration: BoxDecoration(color: Colors.white),
@@ -27,3 +29,5 @@ Widget buildAddTaskSection(TextEditingController nameController, VoidCallback ad
     ),
   );
 }
+
+//it adds UI for tasks//

@@ -14,3 +14,4 @@ class Task {
   }
 }
 
+//According to my view point it describes a task with id and the name. also it helps to complete the status.//

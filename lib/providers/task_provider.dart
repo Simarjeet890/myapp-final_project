@@ -2,6 +2,8 @@ import 'package:myapp/services/task_service.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/models/task_model.dart';
 
+//Actually, it helps to import task service, tasl model and flutter UI//
+
 class TaskProvider extends ChangeNotifier {
   final TaskService taskService = TaskService();
   List<Task> tasks = [];
@@ -10,6 +12,7 @@ class TaskProvider extends ChangeNotifier {
     tasks = await taskService.fetchTasks();
     notifyListeners();
   }
+//it helps to refreshes the app and it gets the data from the database//
 
   Future<void> addTask(String name) async {
     if (name.trim().isNotEmpty) {
@@ -31,3 +34,6 @@ class TaskProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+//it helps to add loading data , deleting and update the changes when happens in the code//
+

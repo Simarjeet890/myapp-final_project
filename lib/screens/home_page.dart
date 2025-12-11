@@ -6,6 +6,8 @@ import 'package:provider/provider.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:myapp/screens/components/build_task_list.dart';
 import 'package:myapp/screens/components/build_add_task_section.dart';
+//it helps to import models, providers, and components for the home page//
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,6 +36,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ],
+          // it adds the color, style and size so it gives a good look//
         ),
       ),
       drawer: Drawer(),
@@ -70,3 +73,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+//it adds task and calendar on the home screen it represents the everyday date//
+
