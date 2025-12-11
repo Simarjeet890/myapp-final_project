@@ -22,9 +22,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => TaskProvider(),
-      child: MaterialApp(
-        home: HomePage(),
-        ),
+      child: MaterialApp(home: HomePage()),
     );
   }
 }
